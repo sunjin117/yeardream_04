@@ -7,7 +7,7 @@ def read_file():
     '''
     file_name = input("file name:")
     try:
-        with open(file_name, 'a') as file:
+        with open(file_name, 'r') as file:
             content = file.read()
             print(content)
     except FileNotFoundError:
